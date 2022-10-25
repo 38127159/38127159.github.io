@@ -5,23 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>按按鈕 - Hexo</title>
+    <title> - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="
-
-
-
-
-
-
-  .animatedbounce{
-      position: absolute;
-
-      animation-name:tmp;
-      animation-dura,"> 
+    <meta name="description" content="$(document).ready(function() {
+    $(&#34;#bt1&#34;).addClass(&#34;animated bounce&#34;);
+    $(&#34;#bt2&#34;).addClass(&#34;a,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -29,38 +20,20 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="按按鈕 - Hexo"/>
-    <meta name="twitter:description" content="
-
-
-
-
-
-
-  .animatedbounce{
-      position: absolute;
-
-      animation-name:tmp;
-      animation-dura,"/>
+    <meta name="twitter:title" content=" - Hexo"/>
+    <meta name="twitter:description" content="$(document).ready(function() {
+    $(&#34;#bt1&#34;).addClass(&#34;animated bounce&#34;);
+    $(&#34;#bt2&#34;).addClass(&#34;a,"/>
     
     
     
     
     <meta property="og:site_name" content="Hexo"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="按按鈕 - Hexo"/>
-    <meta property="og:description" content="
-
-
-
-
-
-
-  .animatedbounce{
-      position: absolute;
-
-      animation-name:tmp;
-      animation-dura,"/>
+    <meta property="og:title" content=" - Hexo"/>
+    <meta property="og:description" content="$(document).ready(function() {
+    $(&#34;#bt1&#34;).addClass(&#34;animated bounce&#34;);
+    $(&#34;#bt2&#34;).addClass(&#34;a,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -78,7 +51,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">按按鈕</h3>
+    <h3 class="subtitle"></h3>
     <div class="social">
         <div>
             <div class="share">
@@ -93,91 +66,18 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">按按鈕</h1>
+        <h1 class="title"></h1>
         <div class="stuff">
-            <span>十月 08, 2022</span>
+            <span>十月 25, 2022</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E4%BD%9C%E6%A5%AD/" rel="tag">作業</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%B8%AC%E8%A9%A6/" rel="tag">測試</a></li></ul>
-
 
         </div>
         <div class="content markdown">
-            
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link rel="stylesheet" href="animate.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<style>
-  .animatedbounce{
-      position: absolute;
-
-      animation-name:tmp;
-      animation-duration:1s;
-      animation-iteration-count:infinite;
-  }
-  @keyframes tmp{
-      0%{
-          top:30%;
-      }
-      50%{
-          top:35%;
-      }
-      100%{
-          top:30%;
-      }
-  }
-
-  .animatedshake{
-    position: absolute;
-    animation-name: sh;
-    animation-duration: 0.5s;
-    animation-iteration-count:infinite;
-  }
-  @keyframes sh{
-    0%{
-      left:40%;
-    }
-    50%{
-      left:45%;
-    }
-    100%{
-      left:40%;
-    }
-  }
-</style>
-
-<script>
-
-  $(document).ready(function() {
-    $("#bt1").click(function(){
-      $("#bt1").addClass("animatedbounce");
-    });
-    $("#bt2").click(function(){
-      $("#bt2").addClass("animatedshake");
-    });
-    $("#bt3").click(function(){
-      $("#bt1").removeClass("animatedbounce");
-      $("#bt2").removeClass("animatedshake");
-    });
+            $(document).ready(function() {
+    $("#bt1").addClass("animated bounce");
+    $("#bt2").addClass("animated shake");
 
   });
-</script>
-
-<div class="container-fluid">
-
-<h2>不同按鈕會有不同的特效</h2>
-
-<button id="bt1">彈跳</button>
-<button id="bt2">搖晃</button>
-<button id="bt3">還原</button>
-
-</div>
-
-
-
-
-
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
